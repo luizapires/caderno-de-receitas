@@ -24,7 +24,6 @@ body {
   line-height: 1.5em;
 }
 
-
 h1,
 h2 {
   color: var(--rosa-medio);
@@ -44,20 +43,20 @@ header a:hover {
 header h1 {
   text-align: center;
   text-shadow: 1px 2px 1px var(--creme-medio), 2px 2px 4px rgba(0, 0, 0, 0.15);
-  font-size: 50px;
+  /*tamanho de texto responsivo:*/
+  font-size: clamp(20px, 8vw, 50px);
+  /*  clamp (tamanho mínimo, tamanho gradual em vw - porcentagem da largura da tela, tamanho máximo)*/
 }
 
 header {
   background-color: var(--creme-medio);
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.48);
-  margin: 0 0 0px;
-  min-height: 100px;
+  margin: 0;
 }
 
 main {
   max-width: 1000px;
-  min-width: 320px;
   background-color: white;
   margin: auto;
   margin-bottom: 30px;
@@ -82,13 +81,15 @@ main a:hover {
 
 img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.48);
+  /* imagem responsiva (proporcional): */
+  max-width: 100%; /* largura máxima em 100% para a imagem não ultrapassar o limite de largura da tela*/
+  height: auto; /*altura: automática*/
+  max-height: 200px; /*altura máxima, para a imagem não ficar muito grande*/
 }
 
-/*
-img {
-  width: 100%;
+img.hero {
+  max-height: 400px;
 }
-*/
 
 .preparo ol > li::marker {
   font-weight: bold;
