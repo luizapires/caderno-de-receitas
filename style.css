@@ -68,6 +68,9 @@ main {
 main h1 {
   text-align: center;
   margin-bottom: 30px;
+  /*tamanho de texto responsivo:*/
+  font-size: clamp(20px, 8vw, 40px);
+  /*  clamp (tamanho mínimo, tamanho gradual em vw - porcentagem da largura da tela, tamanho máximo)*/
 }
 
 main a {
