@@ -71,12 +71,13 @@ main h1 {
   /*tamanho de texto responsivo:*/
   font-size: clamp(20px, 8vw, 40px);
   /*  clamp (tamanho mínimo, tamanho gradual em vw - porcentagem da largura da tela, tamanho máximo)*/
+  line-height: 1; /* ajustar altura da linha */
 }
 
 main a {
   color: var(--castanho-escuro);
 }
-  /* text-decoration: none; 
+/* text-decoration: none; 
 }
 main a:hover {
   text-decoration: underline;
