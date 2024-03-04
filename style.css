@@ -88,7 +88,9 @@ main a:hover {
 img {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   /* imagem responsiva (proporcional): */
-  max-width: 100%; /* largura máxima em 100% para a imagem não ultrapassar o limite de largura da tela*/
+  max-width: calc(
+    100% - 20px
+  ); /* largura máxima em 100% para a imagem não ultrapassar o limite de largura da tela menos 20px (por que cada borda tem 10px)*/
   height: auto; /*altura: automática*/
   max-height: 200px; /*altura máxima, para a imagem não ficar muito grande*/
   border: 10px solid white;
