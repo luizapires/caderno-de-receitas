@@ -51,7 +51,7 @@ header h1 {
 header {
   background-color: var(--creme-medio);
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.48);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   margin: 0;
   z-index: 1;
   position: relative;
@@ -86,11 +86,13 @@ main a:hover {
 } */
 
 img {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.48);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   /* imagem responsiva (proporcional): */
   max-width: 100%; /* largura máxima em 100% para a imagem não ultrapassar o limite de largura da tela*/
   height: auto; /*altura: automática*/
   max-height: 200px; /*altura máxima, para a imagem não ficar muito grande*/
+  border: 10px solid white;
+  border-radius: 4px;
 }
 
 img.hero {
