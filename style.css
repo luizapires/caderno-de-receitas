@@ -75,12 +75,12 @@ main h1 {
 
 main a {
   color: var(--castanho-escuro);
-  text-decoration: none;
 }
-
+  /* text-decoration: none; 
+}
 main a:hover {
   text-decoration: underline;
-}
+} */
 
 img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.48);
