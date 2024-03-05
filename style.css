@@ -8,6 +8,7 @@
   --castanho-escuro: #463d34;
   --rosa-medio: #e78095;
   --rosa-escuro: #fa7791;
+  --verde-claro: #dae0b5;
   --fonte-titulo: "Pacifico", cursive;
 }
 
@@ -68,7 +69,6 @@ main {
 }
 
 main h1 {
-  text-align: center;
   margin-bottom: 30px;
   /*tamanho de texto responsivo:*/
   font-size: clamp(20px, 8vw, 40px);
@@ -78,9 +78,8 @@ main h1 {
 
 main a {
   color: var(--rosa-medio);
-  text-decoration: none; 
+  text-decoration: none;
 }
-
 
 main a:hover {
   text-decoration: underline;
@@ -103,19 +102,51 @@ main a:hover {
 } */
 
 img {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   /* imagem responsiva (proporcional): */
-  max-width: calc(
-    100% - 20px
-  ); /* largura máxima em 100% para a imagem não ultrapassar o limite de largura da tela menos 20px (por que cada borda tem 10px)*/
+  max-width: 100%;
+  /* largura máxima em 100% para a imagem não ultrapassar o limite de largura da tela menos 20px (por que cada borda tem 10px)*/
   height: auto; /*altura: automática*/
   max-height: 200px; /*altura máxima, para a imagem não ficar muito grande*/
+}
+
+.foto-com-fita-cola {
+  rotate: -2deg;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   border: 10px solid white;
   border-radius: 4px;
+  width: fit-content;
+  position: relative;
+}
+
+.foto-com-fita-cola::before {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 30px;
+  background-color: var(--verde-claro);
+  display: block;
+  opacity: 0.6;
+  /* bottom: 0; 
+  left: 50%;
+  translate: -50% 80%;
+  transform: skew(-3deg); */
+  rotate: -30deg;
+  translate: -42% -30%;
+  transform: skew(5deg);
+}
+
+.foto-com-fita-cola img {
+  display: block;
+  border-radius: 2px;
 }
 
 img.hero {
   max-height: 400px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  border: 10px solid white;
+  border-radius: 4px;
+  /* imagem responsiva (proporcional): */
+  max-width: calc(100% - 20px);
 }
 
 .preparo ol > li::marker {
