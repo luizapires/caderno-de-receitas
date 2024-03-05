@@ -17,6 +17,11 @@
   padding: 0px;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: var(--creme-claro);
   font-family: Arial, Helvetica, sans-serif;
@@ -111,17 +116,18 @@ img {
 
 .foto-com-fita-cola {
   rotate: -2deg;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   border: 10px solid white;
   border-radius: 4px;
   width: fit-content;
   position: relative;
+  margin-bottom: 2em;
 }
 
 .foto-com-fita-cola::before {
   position: absolute;
   content: "";
-  width: 30%;
+  width: 70px;
   height: 30px;
   background-color: var(--verde-claro);
   display: block;
@@ -140,14 +146,45 @@ img {
   border-radius: 2px;
 }
 
-img.hero {
+.hero-com-fita-cola {
+  rotate: -2deg;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  border: 10px solid white;
+  border-radius: 4px;
+  width: fit-content;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.hero-com-fita-cola::before {
+  position: absolute;
+  content: "";
+  width: 95px;
+  height: 30px;
+  background-color: var(--verde-claro);
+  display: block;
+  opacity: 0.6;
+  rotate: 3deg;
+  translate: -42% -80%;
+  transform: skew(5deg);
+  left: 50%;
+}
+
+.hero-com-fita-cola img {
+  display: block;
+  border-radius: 2px;
+  max-height: 400px;
+  max-width: 100%;
+}
+
+/* img.hero {
   max-height: 400px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   border: 10px solid white;
   border-radius: 4px;
   /* imagem responsiva (proporcional): */
-  max-width: calc(100% - 20px);
-}
+/* max-width: calc(100% - 20px);
+} */
 
 .preparo ol > li::marker {
   font-weight: bold;
@@ -159,4 +196,6 @@ footer {
   margin: auto;
   text-align: center;
   font-size: 0.7em;
+  position: sticky;
+  top: 100vh;
 }
