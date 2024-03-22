@@ -5,6 +5,7 @@
 :root {
   --creme-claro: #fef5da88;
   --creme-medio: #fef5da;
+  --castanho-claro: #9c8771;
   --castanho-escuro: #463d34;
   --rosa-medio: #e78095;
   --rosa-escuro: #fa7791;
@@ -91,14 +92,27 @@ main a:hover {
 }
 
 .doces a,
-.salgadas a {
+.salgadas a,
+.yammi a {
   text-decoration: none;
   color: var(--castanho-escuro);
 }
 
 .doces a:hover,
-.salgadas a:hover {
+.salgadas a:hover,
+.yammi a:hover {
   text-decoration: underline;
+}
+
+em {
+
+/*text-decoration: underline solid var(--castanho-claro);
+text-underline-offset: 4px;*/
+background-color: var(--creme-medio);
+font-weight: 550;
+padding: 0 4px;
+font-style: normal;
+
 }
 
 /* outro jeito de fazer mais de um seletor:
