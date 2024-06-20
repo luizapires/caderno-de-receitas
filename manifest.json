@@ -1,6 +1,6 @@
 {
-  "theme_color": "#fa7791",
-  "background_color": "#fa7791",
+  "theme_color": "#FDF5DD",
+  "background_color": "#FFFFFF",
   "display": "standalone",
   "scope": "/caderno-de-receitas/",
   "start_url": "/caderno-de-receitas/",
