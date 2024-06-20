@@ -4,8 +4,8 @@
   "display": "standalone",
   "scope": "/caderno-de-receitas/",
   "start_url": "/caderno-de-receitas/",
-  "name": "Caderno de receitas",
-  "short_name": "caderno-receitas",
+  "name": "Caderno de Receitas",
+  "short_name": "Receitas",
   "description": "Caderno de receitas online",
   "icons": [
     {
