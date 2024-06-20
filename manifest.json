@@ -1,0 +1,32 @@
+{
+  "theme_color": "#fa7791",
+  "background_color": "#fa7791",
+  "display": "standalone",
+  "scope": "/luizapires/caderno-de-receitas/",
+  "start_url": "/luizapires/caderno-de-receitas/",
+  "name": "Caderno de receitas",
+  "short_name": "caderno-receitas",
+  "description": "Caderno de receitas online",
+  "icons": [
+    {
+      "src": "/luizapires/caderno-de-receitas/imagens-luiza/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/luizapires/caderno-de-receitas/imagens-luiza/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/luizapires/caderno-de-receitas/imagens-luiza/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/luizapires/caderno-de-receitas/imagens-luiza/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
